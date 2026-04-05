@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+<title>TerraCraft Earthworks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+</head>
+
+<body>
+<div id="headerWrapper">
+  <header class="site-header">
+
+    <div class="nav-left">
+      <img
+        src="images/logo1x.png"
+        srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"
+        alt="TerraCraft Earthworks logo"
+        class="logo"
+      >
+
+      <div class="brand-text">
+        <h1 class="logoText">TerraCraft Earthworks</h1>
+        <p class="tagline">Where journeys converge</p>
+      </div>
+    </div>
+
+    <nav id="primaryNav" class="nav" aria-label="Main navigation">
+<button
+  id="theButton"
+  class="navToggle"
+  aria-label="Toggle menu"
+  aria-expanded="false">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li class="has-children">
+          <a href="#services" class="parent active" aria-expanded="false">Services</a>
+          <ul class="sub-menu">
+            <li><a href="#earthworks">Earthworks</a></li>
+            <li><a href="#hardscaping">Hardscaping</a></li>
+            <li><a href="#landscaping">Landscaping</a></li>
+            <li><a href="#Irrigation">Irrigation</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a class="phone" href="tel:18015551234">
+      <span class="phone-text">(801) 555-1234</span>
+      <svg class="phone-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          fill="white"
+          d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.2-2.2c.3-.3.7-.4
+          1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V21c0 .6-.4
+          1-1 1C10.3 22 2 13.7 2 3c0-.6.4-1 1-1h3.3c.6
+          0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3
+          1.1l-2 2.9z"
+        />
+      </svg>
+    </a>
+
+  </header>
+</div>
+  <!-- end header wrapper -->
+
+    <div id="mainWrapper">
+    <main>
+      <!-- IMAGE SLIDER -->
+      <section class="sliderSection">
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="images/garden03small.webp" media="(max-width: 400px)">
+                <source srcset="images/garden03medium.webp" media="(max-width: 800px)">
+                <img
+                src="images/garden03.webp"
+               alt="Excavation and grading work on a landscape site"
+               width="1200"
+               height="600"
+              fetchpriority="high"
+               decoding="async"
+                  >
+              </picture>
+              <div class="slideText">
+                <h3>Precision Earthworks</h3>
+                <p>Strong site preparation, grading, and drainage solutions.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="images/garden01-small.webp" media="(max-width: 400px)">
+                <source srcset="images/garden01-medium.webp" media="(max-width: 800px)">
+                <img
+                  src="images/garden01.webp"
+                  alt="Stone patio and retaining wall in a landscaped backyard"
+                  width="1200"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
+              <div class="slideText">
+                <h3>Custom Hardscaping</h3>
+                <p>Patios, walkways, and retaining walls built to last.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="images/garden02-small.webp" media="(max-width: 400px)">
+                <source srcset="images/garden02-medium.webp" media="(max-width: 800px)">
+                <img
+                  src="images/garden02.webp"
+                  alt="pond landscaping"
+                  width="1200"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
+              <div class="slideText">
+                <h3>Refined Landscaping</h3>
+                <p>Planting, sod, and finishing touches that complete the space.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- PAGE TITLE / HERO -->
+                    <section class="section tan">
+                       <div class="section-inner">
+<section class="heroSection">
+  <div class="heroSplit">
+
+    <div class="heroVisual">
+      <img src="images/gardening.webp" alt="Beautiful finished landscape with stonework and planting" class="heroImage">
+    </div>
+
+    <div class="heroContent">
+      <h2>Crafting Outdoor Spaces from the Ground Up</h2>
+      <p>
+        TerraCraft Earthworks provides dependable earthworks, hardscaping,
+        and landscape finishing services designed to bring structure,
+        beauty, and long-term value to every property.
+      </p>
+    </div>
+
+  </div>
+</section>
+</div>
+</section>
+
+<!-- SERVICES / CARDS -->
+<section id="services" class="servicesSection section green">
+  <div class="section-inner">
+    <h2>Our Core Services</h2>
+
+    <div class="cardGrid">
+
+      <article id="earthworks" class="serviceCard pngCard">
+        <div class="cardImageWrap">
+          <img
+            src="images/earthworks.webp"
+            alt="Freshly graded lawn and landscaped yard"
+            width="600"
+            height="400"
+            class="cardPhoto"
+            loading="lazy"
+          >
+    <svg
+      class="cardEdgeSvg"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 793 81.7"
+      aria-hidden="true"
+    >
+      <path
+        d="M.5,81.2V20.19S45.65.5,102.64.5c67.6,0,90.82,24.11,151.51,24.11,55.86,0,86.04-23.3,138.35-23.3s89.33,24.51,147.28,24.51c50.92,0,84.81-22.9,145.89-22.9,55.07,0,106.82,17.28,106.82,17.28v61.01H.5Z"
+        fill="#ffffff"
+      />
+    </svg>
+        </div>
+
+        <div class="cardText">
+          <h3>Earthworks</h3>
+          <p>
+            From grading and leveling to excavation and drainage correction,
+            TerraCraft creates the strong groundwork every outdoor project depends on.
+          </p>
+        </div>
+      </article>
+
+      <article id="hardscaping" class="serviceCard pngCard">
+        <div class="cardImageWrap">
+          <img
+            src="images/hardscaping.webp"
+            alt="Stone patio and outdoor seating area"
+            width="600"
+            height="400"
+            class="cardPhoto"
+            loading="lazy"
+          >
+    <svg
+      class="cardEdgeSvg"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 793 81.7"
+      aria-hidden="true"
+    >
+      <path
+        d="M.5,81.2V20.19S45.65.5,102.64.5c67.6,0,90.82,24.11,151.51,24.11,55.86,0,86.04-23.3,138.35-23.3s89.33,24.51,147.28,24.51c50.92,0,84.81-22.9,145.89-22.9,55.07,0,106.82,17.28,106.82,17.28v61.01H.5Z"
+        fill="#ffffff"
+      />
+    </svg>
+        </div>
+
+        <div class="cardText">
+          <h3>Hardscaping</h3>
+          <p>
+            We design and build durable patios, walkways, retaining walls,
+            and stone features that bring both function and visual strength to the yard.
+          </p>
+        </div>
+      </article>
+
+      <article id="landscaping" class="serviceCard pngCard">
+        <div class="cardImageWrap">
+          <img
+            src="images/landscaping.webp"
+            alt="Gazebo, lawn, and landscaped planting beds"
+            width="600"
+            height="400"
+            class="cardPhoto"
+            loading="lazy"
+          >
+          <img
+            src="images/rock01.png"
+            width="600"
+            height="128"
+            alt=""
+            class="cardEdgePng"
+            aria-hidden="true"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="cardText">
+          <h3>Landscaping</h3>
+          <p>
+            Sod installation, planting, mulch, decorative rock, and finishing details
+            bring softness, color, and balance to each completed outdoor space.
+          </p>
+        </div>
+      </article>
+
+      <article id="irrigation" class="serviceCard pngCard">
+        <div class="cardImageWrap">
+          <img
+            src="images/irrigation-drainage.webp"
+            alt="Sprinkler system watering a landscaped lawn"
+            width="600"
+            height="400"
+            class="cardPhoto"
+            loading="lazy"
+          >
+          <img
+            src="images/grass02.png"
+            width="600"
+            height="128"
+            alt=""
+            class="cardEdgePng"
+            aria-hidden="true"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="cardText">
+          <h3>Irrigation &amp; Drainage</h3>
+          <p>
+            Efficient water systems and drainage solutions help protect your landscape,
+            improve performance, and keep outdoor spaces healthy and functional.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+      <!-- TESTIMONIALS -->
+                    <section class="section tan">
+                        <div class="section-inner">
+      <section id="testimonials" class="testimonialsSection">
+        <h2>What Clients Are Saying</h2>
+
+        <div class="testimonialGrid">
+
+          <article class="testimonialCard">
+            <img src="images/dude-picture.webp" alt="Portrait of a satisfied homeowner" class="testimonialPhoto" width="220" height="220" loading="lazy">
+            <div class="testimonialText">
+              <h3>Reliable and Detail-Oriented</h3>
+              <p>
+                “TerraCraft completely transformed our yard. The grading fixed our drainage issues,
+                and the finished space feels both beautiful and incredibly functional.”
+              </p>
+            </div>
+          </article>
+
+          <article class="testimonialCard">
+            <img src="images/woman-picture.webp" alt="Portrait of a happy landscaping client" class="testimonialPhoto" width="220" height="220" loading="lazy">
+            <div class="testimonialText">
+              <h3>Professional from Start to Finish</h3>
+              <p>
+                “The retaining wall, planting beds, and pathway all came together perfectly.
+                The work feels solid, thoughtful, and very high quality.”
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+      
+
+      <!-- CONTACT / CTA -->
+
+      <section id="contact" class="contactSection">
+        <h2>Ready to Build Something Lasting?</h2>
+        <p>
+          Whether you need groundwork, hardscaping, or a full outdoor refresh,
+          TerraCraft Earthworks is ready to shape the space with care and precision.
+        </p>
+        <a href="#" class="contactButton">Request a Quote</a>
+      </section>
+      </div>
+      </section>
+
+    </main>
+  </div>
+</div> <!-- end main wrapper -->
+   <!-- <img src="images/favicon.png" alt="logo" width="40" height="40" class="footerLogo">-->
+<div id="footerWrapper">
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h3>TerraCraft Earthworks</h3>
+      <p>Built from the ground up with care and precision.</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Eagle Mountain, Utah</p>
+      <p>(123) 456-7890</p>
+      <p>info@terracraft.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> &bull; Savannah Longmore</p>
+    <p>
+      <a href="#">Privacy</a>
+      <span>&bull;</span>
+      <a href="#">Accessibility</a>
+    </p>
+  </div>
+</footer>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

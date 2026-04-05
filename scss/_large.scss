@@ -1,0 +1,402 @@
+/* ===============================
+   LARGE / DESKTOP STYLES
+================================= */
+
+@media (min-width: 1024px) {
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  justify-self: start;
+  min-width: 0;
+}
+
+.logo {
+  width: 52px;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.logoText {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.tagline {
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.88);
+  white-space: nowrap;
+}
+
+.nav {
+  justify-self: center;
+}
+
+.navToggle {
+  display: none;
+}
+
+.nav-menu {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: static;
+  background: transparent;
+  width: auto;
+  box-shadow: none;
+}
+
+.nav-menu > li {
+  position: relative;
+}
+
+.nav-menu > li > a {
+  display: block;
+  padding: 0.8rem 0.95rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.nav-menu > li > a:hover,
+.nav-menu > li > a:focus,
+.nav-menu > li > a.active {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.has-children > .parent {
+  position: relative;
+  padding-right: 1.9rem;
+}
+
+.has-children > .parent::after {
+  content: "▼";
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.65rem;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 210px;
+  display: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  list-style: none;
+  background: #1d3b2f;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+}
+
+.sub-menu li a {
+  display: block;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  color: var(--white);
+  white-space: nowrap;
+  border-radius: 0;
+}
+
+.sub-menu li a:hover,
+.sub-menu li a:focus {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.has-children:hover .sub-menu,
+.has-children:focus-within .sub-menu {
+  display: block;
+}
+
+.phone {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: var(--white);
+  white-space: nowrap;
+  padding: 0.45rem 0.7rem;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.phone:hover,
+.phone:focus {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.phone-text {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.phone-icon {
+  display: none;
+}
+
+/* MAIN WRAPPER */
+#mainWrapper {
+  padding: 0 1.5rem 4.5rem;
+}
+
+/* HERO */
+.heroSection {
+  padding: 4rem 0 2.5rem;
+}
+
+.heroText {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: end;
+}
+
+.heroText h2 {
+  font-size: clamp(3rem, 4vw, 4.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  max-width: 11ch;
+  margin: 0;
+}
+
+.heroText p:last-of-type {
+  max-width: 32rem;
+  font-size: 1.05rem;
+  margin: 0 0 0.4rem;
+}
+
+  #mainWrapper {
+    padding: 0 1.5rem 4.5rem;
+  }
+
+  .heroSection {
+    padding: 4rem 0 3rem;
+  }
+
+  .heroSplit {
+    display: grid;
+    grid-template-columns: minmax(320px, 0.9fr) minmax(420px, 1.1fr);
+    gap: 3.5rem;
+    align-items: center;
+  }
+
+  .heroVisual {
+    position: relative;
+  }
+
+  .heroImage {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.14);
+    clip-path: polygon(0 0, 90% 0, 100% 8%, 100% 100%, 10% 100%, 0 92%);
+  }
+
+  .heroContent {
+    max-width: 42rem;
+  }
+
+  .heroContent .eyebrow {
+    margin: 0 0 0.75rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .heroContent h2 {
+    margin: 0 0 1.15rem;
+    font-size: 3rem;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+  }
+
+  .heroContent p:last-child {
+    margin: 0;
+    max-width: 34rem;
+    font-size: 1.06rem;
+    line-height: 1.7;
+  }
+
+  /* SECTION HEADINGS */
+  .sliderSection h2,
+  .servicesSection h2,
+  .testimonialsSection h2,
+  .contactSection h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1.25rem;
+  }
+
+  /* SLIDER */
+  .sliderSection {
+    padding: 1.5rem 0 3rem;
+  }
+
+  .swiper {
+    border-radius: 18px;
+  }
+
+  .swiper-slide img {
+    aspect-ratio: 16 / 7;
+  }
+
+  .slideText {
+    padding: 1.6rem 1.75rem;
+  }
+
+  .slideText h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .slideText p {
+    font-size: 1rem;
+    max-width: 34rem;
+  }
+
+  /* SERVICES */
+  .servicesSection {
+    padding: 1.5rem 0 3.25rem;
+  }
+
+  .cardGrid {
+    gap: 1.75rem;
+  }
+
+  .serviceCard {
+    border-radius: 16px;
+  }
+
+  .serviceCard img:first-child {
+    aspect-ratio: 4 / 2.5;
+  }
+
+  .cardText {
+    padding: 1.25rem 1.25rem 1.45rem;
+  }
+
+  .cardText h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .cardText p {
+    font-size: 0.98rem;
+    max-width: 34ch;
+  }
+
+  .svgCard {
+    padding-bottom: 3.1rem;
+  }
+
+  .cardEdgeSvg {
+    height: 66px;
+  }
+
+  .cardEdgePng {
+    max-height: 70px;
+    object-fit: cover;
+  }
+
+  /* TESTIMONIALS */
+  .testimonialsSection {
+    padding: 1.5rem 0 3.25rem;
+  }
+
+  .testimonialGrid {
+    gap: 1.75rem;
+  }
+
+  .testimonialCard {
+    padding: 1.4rem;
+    grid-template-columns: 130px 1fr;
+    gap: 1.2rem;
+    border-radius: 16px;
+  }
+
+  .testimonialPhoto {
+    width: 130px;
+    height: 130px;
+  }
+
+  .testimonialText h3 {
+    font-size: 1.18rem;
+    margin-bottom: 0.45rem;
+  }
+
+  .testimonialText p {
+    font-size: 0.98rem;
+  }
+
+  /* CONTACT */
+  .contactSection {
+    padding: 1.5rem 0 3.5rem;
+  }
+
+  .contactSection p {
+    max-width: 44rem;
+    font-size: 1.02rem;
+    margin-bottom: 1.35rem;
+  }
+
+  .contactButton {
+    padding: 0.95rem 1.45rem;
+    font-size: 0.98rem;
+  }
+
+  /* FOOTER */
+  .site-footer {
+    padding: 3rem 1.5rem 1.75rem;
+  }
+
+  .footer-inner {
+    max-width: 1000px;
+    gap: 4rem;
+  }
+
+  .footer-brand h3 {
+    font-size: 1.4rem;
+  }
+
+  .footer-links a {
+    font-size: 0.95rem;
+  }
+
+  .footer-contact p {
+    font-size: 0.95rem;
+  }
+}
