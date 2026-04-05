@@ -84,98 +84,104 @@
     <div id="mainWrapper">
     <main>
       <!-- IMAGE SLIDER -->
-      <section class="sliderSection">
+    <section class="sliderSection" aria-labelledby="featured-work-heading">
+  <h2 id="featured-work-heading" class="visually-hidden">Featured Work</h2>
 
-        <div class="swiper">
-          <div class="swiper-wrapper">
+  <div class="swiper">
+    <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <picture>
-                <source srcset="images/garden03small.webp" media="(max-width: 400px)">
-                <source srcset="images/garden03medium.webp" media="(max-width: 800px)">
-                <img
-                src="images/garden03.webp"
-               alt="Excavation and grading work on a landscape site"
-               width="1200"
-               height="600"
-              fetchpriority="high"
-               decoding="async"
-                  >
-              </picture>
-              <div class="slideText">
-                <h3>Precision Earthworks</h3>
-                <p>Strong site preparation, grading, and drainage solutions.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <picture>
-                <source srcset="images/garden01-small.webp" media="(max-width: 400px)">
-                <source srcset="images/garden01-medium.webp" media="(max-width: 800px)">
-                <img
-                  src="images/garden01.webp"
-                  alt="Stone patio and retaining wall in a landscaped backyard"
-                  width="1200"
-                  height="600"
-                  loading="lazy"
-                  decoding="async"
-                >
-              </picture>
-              <div class="slideText">
-                <h3>Custom Hardscaping</h3>
-                <p>Patios, walkways, and retaining walls built to last.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <picture>
-                <source srcset="images/garden02-small.webp" media="(max-width: 400px)">
-                <source srcset="images/garden02-medium.webp" media="(max-width: 800px)">
-                <img
-                  src="images/garden02.webp"
-                  alt="pond landscaping"
-                  width="1200"
-                  height="600"
-                  loading="lazy"
-                  decoding="async"
-                >
-              </picture>
-              <div class="slideText">
-                <h3>Refined Landscaping</h3>
-                <p>Planting, sod, and finishing touches that complete the space.</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="swiper-pagination"></div>
+      <div class="swiper-slide">
+        <picture>
+          <source srcset="images/garden03small.webp" media="(max-width: 400px)">
+          <source srcset="images/garden03medium.webp" media="(max-width: 800px)">
+          <img
+            src="images/garden03.webp"
+            alt="Excavation and grading work on a landscape site"
+            width="1200"
+            height="600"
+            fetchpriority="high"
+            decoding="async"
+          >
+        </picture>
+        <div class="slideText">
+          <h3>Precision Earthworks</h3>
+          <p>Strong site preparation, grading, and drainage solutions.</p>
         </div>
-      </section>
+      </div>
 
-      <!-- PAGE TITLE / HERO -->
-                    <section class="section tan">
-                       <div class="section-inner">
-                        <h2></h2>
-<section class="heroSection">
-  <div class="heroSplit">
+      <div class="swiper-slide">
+        <picture>
+          <source srcset="images/garden01-small.webp" media="(max-width: 400px)">
+          <source srcset="images/garden01-medium.webp" media="(max-width: 800px)">
+          <img
+            src="images/garden01.webp"
+            alt="Stone patio and retaining wall in a landscaped backyard"
+            width="1200"
+            height="600"
+            loading="lazy"
+            decoding="async"
+          >
+        </picture>
+        <div class="slideText">
+          <h3>Custom Hardscaping</h3>
+          <p>Patios, walkways, and retaining walls built to last.</p>
+        </div>
+      </div>
 
-    <div class="heroVisual">
-      <img src="images/gardening.webp" alt="Beautiful finished landscape with stonework and planting" class="heroImage">
+      <div class="swiper-slide">
+        <picture>
+          <source srcset="images/garden02-small.webp" media="(max-width: 400px)">
+          <source srcset="images/garden02-medium.webp" media="(max-width: 800px)">
+          <img
+            src="images/garden02.webp"
+            alt="Pond landscaping"
+            width="1200"
+            height="600"
+            loading="lazy"
+            decoding="async"
+          >
+        </picture>
+        <div class="slideText">
+          <h3>Refined Landscaping</h3>
+          <p>Planting, sod, and finishing touches that complete the space.</p>
+        </div>
+      </div>
+
     </div>
 
-    <div class="heroContent">
-      <h2>Crafting Outdoor Spaces from the Ground Up</h2>
-      <p>
-        TerraCraft Earthworks provides dependable earthworks, hardscaping,
-        and landscape finishing services designed to bring structure,
-        beauty, and long-term value to every property.
-      </p>
-    </div>
-
+    <div class="swiper-pagination"></div>
   </div>
 </section>
+
+      <!-- PAGE TITLE / HERO -->
+                  <div class="section tan">
+  <div class="section-inner">
+    <section class="heroSection" aria-labelledby="hero-heading">
+      <div class="heroSplit">
+
+        <div class="heroVisual">
+          <img
+            src="images/gardening.webp"
+            alt="Beautiful finished landscape with stonework and planting"
+            class="heroImage"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+
+        <div class="heroContent">
+          <h2 id="hero-heading">Crafting Outdoor Spaces from the Ground Up</h2>
+          <p>
+            TerraCraft Earthworks provides dependable earthworks, hardscaping,
+            and landscape finishing services designed to bring structure,
+            beauty, and long-term value to every property.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </div>
 </div>
-</section>
 
 <!-- SERVICES / CARDS -->
 <section id="services" class="servicesSection section green">
